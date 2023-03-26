@@ -1,7 +1,14 @@
+using DevOps_As1.Context;
+using DevOps_As1.Controllers;
+using Microsoft.EntityFrameworkCore;
+using System;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<FakeDbContext>(option => option.UseSqlServer("Server=DESKTOP-4JH7I5I\\SQLEXPRESS01;Database=AtividadeSomativa;Trusted_Connection=True;TrustServerCertificate=True;"));
 
 var app = builder.Build();
 
