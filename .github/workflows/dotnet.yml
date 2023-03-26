@@ -25,6 +25,6 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-    -name: Deploy
+    - name: Deploy
       run: dotnet publish -c Release --output ./Release
       
