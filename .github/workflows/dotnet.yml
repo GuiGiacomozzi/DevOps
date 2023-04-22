@@ -24,7 +24,7 @@ jobs:
       
     - name: Publish to Docker
       run: docker pull guilhermegiacomozzi/as2
-        docker run -V $PWD/:/app/report/guilhermegiacomozzi/as2
+        docker run -v $PWD/:/app/report/guilhermegiacomozzi/as2
     
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
