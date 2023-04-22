@@ -15,7 +15,7 @@ jobs:
         os: [ubuntu-latest, windows-latest]
     steps:
     - name: Set up projects
-      uses: security-code-scan/security-code-scan-add-action@v1.2
+      uses: security-code-scan/security-code-scan-add-action@v2
       
     - uses: actions/checkout@v3
     
@@ -40,5 +40,5 @@ jobs:
       uses: security-code-scan/security-code-scan-results-action@main
         
     - name: Upload sarif
-      uses: github/codeql-action/upload-sarif@v1
+      uses: github/codeql-action/upload-sarif@v2
       
