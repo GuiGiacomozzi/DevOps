@@ -10,10 +10,6 @@ env:
   
 permissions: write-all
 
-script:
-  - docker pull guilhermegiacomozzi/as2
-  - docker run -V $PWD/:/app/report/guilhermegiacomozzi/as2
-
 jobs:
   ci:
     name: ci-${{matrix.os}}
@@ -21,6 +17,9 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
+        script:
+          - docker pull guilhermegiacomozzi/as2
+          - docker run -V $PWD/:/app/report/guilhermegiacomozzi/as2
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v3
