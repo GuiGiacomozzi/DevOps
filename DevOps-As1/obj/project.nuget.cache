@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0W0+brSdrBBW4tVOl8Ia/PR6W59V1JSoV6lteRNHSBKDjj5edK9CcCAQltR1DYeXVEdvRvx9EKf5HH80Q0R9QA==",
+  "dgSpecHash": "K5YGhUHRWWQlEHV2FuHD27gUcPQcGclUH2U4+dLt/2/pkB5J0/aNfOu6CJawfEp3Fg5aNaPr15uHwJjI0XFHSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\guigi\\Documents\\Project\\DevOps\\devops-as1\\DevOps-As1.csproj",
+  "projectFilePath": "C:\\Users\\guigi\\Documents\\Project\\DevOps\\DevOps-As1\\DevOps-As1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guigi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\guigi\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
