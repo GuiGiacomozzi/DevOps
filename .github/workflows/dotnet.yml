@@ -4,8 +4,11 @@ on:
   push:
   pull_request:
     branches: [ master ]
+    
 env:
   DOTNET_VERSION: '6.0.x'
+  
+permissions: read-all|write-all
 jobs:
   ci:
     name: ci-${{matrix.os}}
