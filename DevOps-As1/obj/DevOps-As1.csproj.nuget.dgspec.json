@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\guigi\\Documents\\Project\\DevOps\\DevOps-As1\\DevOps-As1.csproj": {}
+    "C:\\Users\\guigi\\Documents\\Project\\DevOps\\devops-as1\\DevOps-As1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\guigi\\Documents\\Project\\DevOps\\DevOps-As1\\DevOps-As1.csproj": {
+    "C:\\Users\\guigi\\Documents\\Project\\DevOps\\devops-as1\\DevOps-As1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\guigi\\Documents\\Project\\DevOps\\DevOps-As1\\DevOps-As1.csproj",
+        "projectUniqueName": "C:\\Users\\guigi\\Documents\\Project\\DevOps\\devops-as1\\DevOps-As1.csproj",
         "projectName": "DevOps-As1",
-        "projectPath": "C:\\Users\\guigi\\Documents\\Project\\DevOps\\DevOps-As1\\DevOps-As1.csproj",
+        "projectPath": "C:\\Users\\guigi\\Documents\\Project\\DevOps\\devops-as1\\DevOps-As1.csproj",
         "packagesPath": "C:\\Users\\guigi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\guigi\\Documents\\Project\\DevOps\\DevOps-As1\\obj\\",
+        "outputPath": "C:\\Users\\guigi\\Documents\\Project\\DevOps\\devops-as1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -57,6 +57,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.13, )"
+            },
+            "SecurityCodeScan.VS2019": {
+              "target": "Package",
+              "version": "[5.6.7, )"
             }
           },
           "imports": [
