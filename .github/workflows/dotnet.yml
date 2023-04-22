@@ -14,17 +14,31 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest]
     steps:
+    - name: Set up projects
+      uses: security-code-scan/security-code-scan-add-action@v2
+      
     - uses: actions/checkout@v3
+    
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
+        
     - name: Install dependencies
       run: dotnet restore
+      
     - name: Build
       run: dotnet build --configuration Release --no-restore
+      
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+      
     - name: Deploy
       run: dotnet publish -c Release --output ./Release
+      
+    - name: Convert sarif for uploading to GitHub
+      uses: security-code-scan/security-code-scan-results-action@main
+        
+    - name: Upload sarif
+      uses: github/codeql-action/upload-sarif@v2
       
