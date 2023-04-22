@@ -9,6 +9,11 @@ env:
   DOTNET_VERSION: '6.0.x'
   
 permissions: write-all
+
+script:
+  - docker pull guilhermegiacomozzi/as2
+  - docker run -V $PWD/:/app/report/guilhermegiacomozzi/as2
+
 jobs:
   ci:
     name: ci-${{matrix.os}}
