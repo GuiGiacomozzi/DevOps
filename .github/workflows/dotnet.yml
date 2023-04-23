@@ -30,7 +30,7 @@ jobs:
       with:
         image: guilhermegiacomozzi/as2:latest
         options: -v ${{ github.workspace }}:/var/www
-        run: docker run -t ${{ secrets.DOCKER_USERNAME }}/as2:latest
+        run: docker run -t guilhermegiacomozzi/as2:latest
     
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
